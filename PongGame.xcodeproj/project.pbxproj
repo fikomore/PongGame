@@ -1,0 +1,339 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		93412ACA20FCC13000AAFD1C /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 93412AC920FCC13000AAFD1C /* main.cpp */; };
+		93412AD220FCC15000AAFD1C /* SDL2_image.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93412AD120FCC15000AAFD1C /* SDL2_image.framework */; };
+		93412AD420FCC17300AAFD1C /* SDL2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93412AD320FCC17300AAFD1C /* SDL2.framework */; };
+		93412AD720FCC36B00AAFD1C /* gameManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 93412AD520FCC36B00AAFD1C /* gameManager.cpp */; };
+		93412ADA20FCC5D600AAFD1C /* grahpics.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 93412AD820FCC5D600AAFD1C /* grahpics.cpp */; };
+		93412AE020FD538800AAFD1C /* player.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 93412ADF20FD538800AAFD1C /* player.cpp */; };
+		93412AE320FD685900AAFD1C /* input.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 93412AE120FD685900AAFD1C /* input.cpp */; };
+		93412AE620FD6E4400AAFD1C /* ball.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 93412AE420FD6E4400AAFD1C /* ball.cpp */; };
+		93556322210F3E900067B6C4 /* level.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 93556320210F3E900067B6C4 /* level.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		93412AC420FCC13000AAFD1C /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		93412AC620FCC13000AAFD1C /* PongGame */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = PongGame; sourceTree = BUILT_PRODUCTS_DIR; };
+		93412AC920FCC13000AAFD1C /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		93412AD120FCC15000AAFD1C /* SDL2_image.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL2_image.framework; path = ../../../../Library/Frameworks/SDL2_image.framework; sourceTree = "<group>"; };
+		93412AD320FCC17300AAFD1C /* SDL2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL2.framework; path = ../../../../Library/Frameworks/SDL2.framework; sourceTree = "<group>"; };
+		93412AD520FCC36B00AAFD1C /* gameManager.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = gameManager.cpp; sourceTree = "<group>"; };
+		93412AD620FCC36B00AAFD1C /* gameManager.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = gameManager.hpp; sourceTree = "<group>"; };
+		93412AD820FCC5D600AAFD1C /* grahpics.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = grahpics.cpp; sourceTree = "<group>"; };
+		93412AD920FCC5D600AAFD1C /* grahpics.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = grahpics.hpp; sourceTree = "<group>"; };
+		93412ADE20FD538800AAFD1C /* player.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = player.hpp; sourceTree = "<group>"; };
+		93412ADF20FD538800AAFD1C /* player.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = player.cpp; sourceTree = "<group>"; };
+		93412AE120FD685900AAFD1C /* input.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = input.cpp; sourceTree = "<group>"; };
+		93412AE220FD685900AAFD1C /* input.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = input.hpp; sourceTree = "<group>"; };
+		93412AE420FD6E4400AAFD1C /* ball.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ball.cpp; sourceTree = "<group>"; };
+		93412AE520FD6E4400AAFD1C /* ball.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ball.hpp; sourceTree = "<group>"; };
+		93556320210F3E900067B6C4 /* level.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = level.cpp; sourceTree = "<group>"; };
+		93556321210F3E900067B6C4 /* level.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = level.hpp; sourceTree = "<group>"; };
+		93556323211341370067B6C4 /* globals.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = globals.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		93412AC320FCC13000AAFD1C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				93412AD420FCC17300AAFD1C /* SDL2.framework in Frameworks */,
+				93412AD220FCC15000AAFD1C /* SDL2_image.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		93412ABD20FCC13000AAFD1C = {
+			isa = PBXGroup;
+			children = (
+				93412AC820FCC13000AAFD1C /* PongGame */,
+				93412AC720FCC13000AAFD1C /* Products */,
+				93412AD020FCC15000AAFD1C /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		93412AC720FCC13000AAFD1C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				93412AC620FCC13000AAFD1C /* PongGame */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		93412AC820FCC13000AAFD1C /* PongGame */ = {
+			isa = PBXGroup;
+			children = (
+				93412AC920FCC13000AAFD1C /* main.cpp */,
+				93412AD520FCC36B00AAFD1C /* gameManager.cpp */,
+				93412AD820FCC5D600AAFD1C /* grahpics.cpp */,
+				93412ADF20FD538800AAFD1C /* player.cpp */,
+				93412AE120FD685900AAFD1C /* input.cpp */,
+				93412AE420FD6E4400AAFD1C /* ball.cpp */,
+				93556320210F3E900067B6C4 /* level.cpp */,
+				93556323211341370067B6C4 /* globals.h */,
+				93412AD620FCC36B00AAFD1C /* gameManager.hpp */,
+				93412AD920FCC5D600AAFD1C /* grahpics.hpp */,
+				93412ADE20FD538800AAFD1C /* player.hpp */,
+				93412AE220FD685900AAFD1C /* input.hpp */,
+				93412AE520FD6E4400AAFD1C /* ball.hpp */,
+				93556321210F3E900067B6C4 /* level.hpp */,
+			);
+			path = PongGame;
+			sourceTree = "<group>";
+		};
+		93412AD020FCC15000AAFD1C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				93412AD320FCC17300AAFD1C /* SDL2.framework */,
+				93412AD120FCC15000AAFD1C /* SDL2_image.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		93412AC520FCC13000AAFD1C /* PongGame */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 93412ACD20FCC13000AAFD1C /* Build configuration list for PBXNativeTarget "PongGame" */;
+			buildPhases = (
+				93412AC220FCC13000AAFD1C /* Sources */,
+				93412AC320FCC13000AAFD1C /* Frameworks */,
+				93412AC420FCC13000AAFD1C /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PongGame;
+			productName = PongGame;
+			productReference = 93412AC620FCC13000AAFD1C /* PongGame */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		93412ABE20FCC13000AAFD1C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = "Fikrim Kabashi";
+				TargetAttributes = {
+					93412AC520FCC13000AAFD1C = {
+						CreatedOnToolsVersion = 9.4;
+					};
+				};
+			};
+			buildConfigurationList = 93412AC120FCC13000AAFD1C /* Build configuration list for PBXProject "PongGame" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 93412ABD20FCC13000AAFD1C;
+			productRefGroup = 93412AC720FCC13000AAFD1C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				93412AC520FCC13000AAFD1C /* PongGame */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		93412AC220FCC13000AAFD1C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				93556322210F3E900067B6C4 /* level.cpp in Sources */,
+				93412AE020FD538800AAFD1C /* player.cpp in Sources */,
+				93412ACA20FCC13000AAFD1C /* main.cpp in Sources */,
+				93412AE620FD6E4400AAFD1C /* ball.cpp in Sources */,
+				93412AE320FD685900AAFD1C /* input.cpp in Sources */,
+				93412AD720FCC36B00AAFD1C /* gameManager.cpp in Sources */,
+				93412ADA20FCC5D600AAFD1C /* grahpics.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		93412ACB20FCC13000AAFD1C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		93412ACC20FCC13000AAFD1C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		93412ACE20FCC13000AAFD1C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LOCAL_LIBRARY_DIR)/Frameworks",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		93412ACF20FCC13000AAFD1C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LOCAL_LIBRARY_DIR)/Frameworks",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		93412AC120FCC13000AAFD1C /* Build configuration list for PBXProject "PongGame" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				93412ACB20FCC13000AAFD1C /* Debug */,
+				93412ACC20FCC13000AAFD1C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		93412ACD20FCC13000AAFD1C /* Build configuration list for PBXNativeTarget "PongGame" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				93412ACE20FCC13000AAFD1C /* Debug */,
+				93412ACF20FCC13000AAFD1C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 93412ABE20FCC13000AAFD1C /* Project object */;
+}
