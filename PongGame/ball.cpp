@@ -7,92 +7,101 @@
 //
 
 #include "ball.hpp"
+#include <iostream>
 
 Ball::Ball(){};
 
 Ball::Ball(Graphics &graphics,const std::string &filePath, int sourceX, int sourceY, int width, int height, int posX, int posY)
 {
-    this->sourceRectangle.x = sourceX;
-    this->sourceRectangle.y = sourceY;
-    this->sourceRectangle.w = width;
-    this->sourceRectangle.h = height;
+    source_rectangle_.x = sourceX;
+    source_rectangle_.y = sourceY;
+    source_rectangle_.w = width;
+    source_rectangle_.h = height;
     
-    this->direction = STOP;
+    direction_ = STOP;
     
-    this->posX = posX;
-    this->posY = posY;
-    this->width = width;
-    this->height = height;
+    pos_x_ = start_pos_x_ = posX;
+    pos_y_ = start_pos_y_ = posY;
+    width_ = width;
+    height_ = height;
     
-    texture = SDL_CreateTextureFromSurface(graphics.getRenderer(), graphics.loadImage(filePath));
-    if(texture == nullptr){
+    texture_ = SDL_CreateTextureFromSurface(graphics.GetRenderer(), graphics.LoadImage(filePath));
+    if(texture_ == nullptr){
         printf("\nError: unable to load BALL image.\n");
     }
 }
 
 Ball::~Ball(){};
 
-void Ball::draw(Graphics &graphics) {
-    SDL_Rect destinationRectangle;
-    destinationRectangle.x = this->posX;
-    destinationRectangle.y = this->posY;
-    destinationRectangle.w = this->sourceRectangle.w;
-    destinationRectangle.h = this->sourceRectangle.h;
-    graphics.blitSurface(texture, &this->sourceRectangle, &destinationRectangle);
+void Ball::Draw(Graphics &graphics) {
+    destination_rectangle_.x = pos_x_;
+    destination_rectangle_.y = pos_y_;
+    destination_rectangle_.w = source_rectangle_.w;
+    destination_rectangle_.h = source_rectangle_.h;
+//    std::cout<<destinationRectangle.x<<destinationRectangle.y<<destinationRectangle.w<<destinationRectangle.h<<std::endl;
+    graphics.BlitSurface(texture_, &source_rectangle_, &destination_rectangle_);
 }
 
-void Ball::move(){
-    switch (direction) {
+void Ball::Move(){
+    switch (direction_) {
         case STOP:
             break;
         case UP:
-            posY--;
+            pos_y_--;
             break;
         case DOWN:
-            posY++;
+            pos_y_++;
             break;
         case LEFT_UP:
-            posX--;
-            posY--;
+            pos_x_--;
+            pos_y_--;
             break;
         case RIGHT_UP:
-            posX++;
-            posY--;
+            pos_x_++;
+            pos_y_--;
             break;
         case LEFT_DOWN:
-            posX--;
-            posY++;
+            pos_x_--;
+            pos_y_++;
             break;
         case RIGHT_DOWN:
-            posX++;
-            posY++;
+            pos_x_++;
+            pos_y_++;
             break;
         default:
             break;
     }
 }
 
-void Ball::setDirection(ballDirection direction){
-    this->direction = direction;
+void Ball::SetDirection(ballDirection direction){
+    direction_ = direction;
 }
 
-int Ball::getPositionX(){
-    return  this->posX;
+int Ball::GetPositionX(){
+    return pos_x_;
 }
 
-int Ball::getPositionY(){
-    return this->posY;
+int Ball::GetPositionY(){
+    return pos_y_;
 }
 
-int Ball::getWidth(){
-    return this->width;
+int Ball::GetWidth(){
+    return width_;
 }
 
-int Ball::getHeight(){
-    return this->height;
+int Ball::GetHeight(){
+    return height_;
 }
 
-ballDirection Ball::getDirection(){
-    return this->direction;
+ballDirection Ball::GetDirection(){
+    return direction_;
 }
 
+SDL_Rect Ball::GetRectangle(){
+    return destination_rectangle_;
+}
+
+void Ball::Restart(){
+    pos_x_ = start_pos_x_;
+    pos_y_ = start_pos_y_;
+}

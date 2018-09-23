@@ -17,18 +17,21 @@
 
 class GameManager{
 private:
-    void gameLoop();
-    void draw(Graphics &graphics);
-    void logic();
-    bool checkCollision(Ball ball, Player player);
-    void limitingFPS(float elapsedTime);
+    void GameLoop();
+    void Draw(Graphics &graphics);
+    void Logic();
+    bool CheckCollision(Ball ball, Player player);
+    bool HandleCollisionWithBlock(SDL_Rect block, SDL_Rect ball);
+    void LimitingFPS(float elapsedTime);
+    void Restart();
+    bool new_game_;
 public:
     GameManager();
     ~GameManager();
     
-    Player player;
-    Ball lopta;
-    Level level;
+    Player player_;
+    Ball ball_;
+    Level level_;
 };
 
 #endif /* gameManager_hpp */

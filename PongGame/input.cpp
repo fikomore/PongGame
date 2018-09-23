@@ -12,29 +12,29 @@ Input::Input(){};
 
 Input::~Input(){};
 
-void Input::keyDownEvent(const SDL_Event &event){
-    this->pressedKey[event.key.keysym.scancode] = true;
-    this->heldKey[event.key.keysym.scancode] = true;
+void Input::KeyDownEvent(const SDL_Event &event){
+    pressed_key_[event.key.keysym.scancode] = true;
+    held_key_[event.key.keysym.scancode] = true;
 }
 
-void Input::keyUpEvent(const SDL_Event &event){
-    this->releasedKey[event.key.keysym.scancode] = true;
-    this->heldKey[event.key.keysym.scancode] = false;
+void Input::KeyUpEvent(const SDL_Event &event){
+    released_key_[event.key.keysym.scancode] = true;
+    held_key_[event.key.keysym.scancode] = false;
 }
 
-void Input::reset(){
-    pressedKey.clear();
-    releasedKey.clear();
+void Input::Reset(){
+    pressed_key_.clear();
+    released_key_.clear();
 }
 
-bool Input::wasKeyPressed(SDL_Scancode key){
-    return this->pressedKey[key];
+bool Input::WasKeyPressed(SDL_Scancode key){
+    return pressed_key_[key];
 }
 
-bool Input::wasKeyReleased(SDL_Scancode key){
-    return this->releasedKey[key];
+bool Input::WasKeyReleased(SDL_Scancode key){
+    return released_key_[key];
 }
 
-bool Input::isKeyHeld(SDL_Scancode key){
-    return this->heldKey[key];
+bool Input::IsKeyHeld(SDL_Scancode key){
+    return held_key_[key];
 }

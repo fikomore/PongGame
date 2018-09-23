@@ -10,14 +10,16 @@
 #define globals_h
 
 namespace globals {
-    const int SCREEN_WIDTH = 640;
-    const int SCREEN_HEIGHT = 512;
-    const int BG_BLOCK_SIZE = 64;
-    const int PADDLE_WIDTH = 40;
-    const int PADDLE_HEIGHT = 15;
-    const int BALL_SIZE = 20;
-    const int FPS = 180;
-    const int MAX_FRAME_TIME = 5*1000/FPS;
+    const int kScreenWidth = 640;
+    const int kScreenHeight = 512;
+    const int kBackgroungBlockSize = 64;
+    const int kBlockWidth = 48;
+    const int kBlockHeight = 15;
+    const int kPaddleWidth = 40;
+    const int kPaddleHeight = 15;
+    const int kBallSize = 20;
+    const int kFps = 150;
+    const int kMaxFrameTime = 5*1000/kFps;
     
 }
 

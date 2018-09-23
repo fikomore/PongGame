@@ -15,21 +15,21 @@
 
 class Input{
 private:
-    std::map<SDL_Scancode, bool> pressedKey;
-    std::map<SDL_Scancode, bool> releasedKey;
-    std::map<SDL_Scancode, bool> heldKey;
+    std::map<SDL_Scancode, bool> pressed_key_;
+    std::map<SDL_Scancode, bool> released_key_;
+    std::map<SDL_Scancode, bool> held_key_;
     
 public:
     Input();
     ~Input();
     
-    void keyDownEvent(const SDL_Event& event);
-    void keyUpEvent(const SDL_Event& event);
-    void reset();
+    void KeyDownEvent(const SDL_Event& event);
+    void KeyUpEvent(const SDL_Event& event);
+    void Reset();
     
-    bool wasKeyPressed(SDL_Scancode key);
-    bool wasKeyReleased(SDL_Scancode key);
-    bool isKeyHeld(SDL_Scancode key);
+    bool WasKeyPressed(SDL_Scancode key);
+    bool WasKeyReleased(SDL_Scancode key);
+    bool IsKeyHeld(SDL_Scancode key);
 };
 
 #endif /* input_hpp */

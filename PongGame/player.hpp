@@ -18,25 +18,28 @@ class Graphics;
 
 class Player{
 private:
-    SDL_Texture* texture;
-    SDL_Rect sourceRect;
-    int posX;
-    int posY;
-    int width;
-    int height;
+    SDL_Texture* texture_;
+    SDL_Rect source_rectangle_;
+    int start_pos_x_;
+    int start_pos_y_;
+    int pos_x_;
+    int pos_y_;
+    int width_;
+    int height_;
     
 public:
     Player();
     Player(Graphics &graphics,const std::string &filePath,int sourceX, int sourceY, int width, int height, int posX, int posY);
     ~Player();
-    void draw(Graphics &graphics);
-    void moveLeft();
-    void moveRight();
+    void Draw(Graphics &graphics);
+    void MoveLeft();
+    void MoveRight();
+    void Restart();
     
-    int getPositionX();
-    int getPositionY();
-    int getWidth();
-    int getHeight();
+    int GetPositionX();
+    int GetPositionY();
+    int GetWidth();
+    int GetHeight();
 };
 
 #endif /* player_hpp */

@@ -16,30 +16,34 @@
 
 class Ball{
 private:
-    SDL_Texture* texture;
-    SDL_Rect sourceRectangle;
+    SDL_Texture* texture_;
+    SDL_Rect source_rectangle_;
+    SDL_Rect destination_rectangle_;
+    ballDirection direction_;
     
-    ballDirection direction;
-    
-    int posX;
-    int posY;
-    int width;
-    int height;
+    int start_pos_x_;
+    int start_pos_y_;
+    int pos_x_;
+    int pos_y_;
+    int width_;
+    int height_;
 public:
     Ball();
     Ball(Graphics &graphics,const std::string &filePath, int sourceX, int sourceY, int width, int height, int posX, int posY);
     ~Ball();
     
-    int getPositionX();
-    int getPositionY();
-    int getHeight();
-    int getWidth();
+    int GetPositionX();
+    int GetPositionY();
+    int GetHeight();
+    int GetWidth();
+    SDL_Rect GetRectangle();
     
-    ballDirection getDirection();
+    ballDirection GetDirection();
     
-    void draw(Graphics &graphics);
-    void move();
-    void setDirection(ballDirection direction);
+    void Draw(Graphics &graphics);
+    void Move();
+    void SetDirection(ballDirection direction);
+    void Restart();
 };
 
 #endif /* ball_hpp */
